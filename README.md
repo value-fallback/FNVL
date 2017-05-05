@@ -27,5 +27,26 @@ yarn add fnvl
 
 ```javascript
 const fnvl = require('fnvl');
-...
+
+function someFn() {
+	// ...
+}
+
+// When a value is not Function, it will return fallback value.
+let a = fnvl(10, 'x'); // a = 'x'
+let b = fnvl([1, 2, 3], console.log); // b = console.log
+
+// When a value is Function, it will return that value.
+let c = fnvl(console.error, 1); // c = console.error
+let d = fnvl(someFn, () => {}); // d = someFn
 ```
+
+## API
+
+### fnvl(value, fallbackValue)
+
+#### value
+A main value.
+
+#### fallbackValue
+A fallback value.
