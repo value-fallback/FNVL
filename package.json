@@ -1,0 +1,33 @@
+{
+  "name": "fnvl",
+  "version": "1.0.0",
+  "description": "Fallback when a value is not Function.",
+  "main": "./index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/value-fallback/FNVL"
+  },
+  "keywords": [
+    "function",
+    "fallback",
+    "value-fallback"
+  ],
+  "author": "Saran Tanpituckpong <sarunta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/value-fallback/FNVL/issues"
+  },
+  "homepage": "https://github.com/value-fallback/FNVL",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-gluons": "^2.0.1",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "is-fn": "^1.0.0"
+  }
+}
